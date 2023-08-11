@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F607%2F620%2Foriginal%2Flarge-amusement-park-scene-vector.jpg&f=1&nofb=1&ipt=2665aeef6a75debb925cc38d689703e1c38f97eb83ca23316edb2f8046bd489d&ipo=images');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+  background-color: #141265;
+  height: 7vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logoTitle {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  max-width: 200vw;
+  max-height: 20vh;
 }
 
-.App-link {
-  color: #61dafb;
+.trillTrack {
+  margin: 0 1vw;
+  color: beige;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homeAbout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 200vw;
+  max-height: 20vh;
+  font-size: 20px;
+}
+
+.homeAbout a {
+  padding: 1vh 1vw;
+  color: beige;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+
+
+.homeNav:hover {
+  transform: scale(1.10);
+}
+
+.homeNav:hover~.homeNav {
+  transform: translateY(10px);
+}
+
+.aboutNav:hover {
+  transform: scale(1.10);
+}
+
+.aboutNav:hover~.aboutNav {
+  transform: translateY(10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.link {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.linkContainer:hover {
+  transform: scale(1.06);
+}
+
+.linkContainer:hover~.linkContainer {
+  transform: translateY(2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logoHomeAbout {
+  display: flex;
+  padding: 1vh 1vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoImage {
+  width: 4vw;
+  height: 5vh;
+  border: 1px solid rgb(241, 175, 175);
+  border-radius: 5px;
 }
