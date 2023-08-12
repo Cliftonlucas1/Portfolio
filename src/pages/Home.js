@@ -4,15 +4,18 @@ import React from 'react'
 import Header from '../components/Header'
 import Center from '../components/Center'
 import Footer from '../components/Footer'
+import About from '../components/About'
+
+// import About from './pages/About'
 
 const Home = () => {
   return (
-    <div className="flex flex-col min-h-screen justify-between">
+    <div>
       <Header />
-      <div flex-grow w-full flex items-center justify-center>
+      <div>
         <Center />
       </div>
-      <Footer className="w-8 h-8 flex justify-between" />
+      <Footer />
     </div>
   )
 }

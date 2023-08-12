@@ -5,7 +5,7 @@ const FooterNavigation = () => (
   <header  className="">
 
     <nav className="container mx-auto py-4">
-      <div className="text-3xl   mb-4"> {/* Bottom margin added here for the title */}
+      <div className="text-3xl  "> {/* Bottom margin added here for the title */}
 
         <div className="flex items-center justify-center h-full mb-8"> 
         <NavLink to="/" className="logo">
@@ -24,24 +24,25 @@ const FooterNavigation = () => (
           <h1 className='font-special font-weight: 400'>Clifton D. Lucas</h1>
         </div>
 
-        <div  className="homeAbout flex justify-between mt-4 mb-8"> {/* Top margin added here for the links */}
-          <div className="homeNav mb-4"> {/* Bottom margin added here for individual link */}
-            <NavLink to="/project" className="projectLink  transform transition-all hover:scale-140">
-            <h2 className="font-special font-weight: 400 transform transition-all hover:scale-140 ">ABOUT</h2>
+        <div  className="homeAbout flex justify-between  "> {/* Top margin added here for the links */}
+          <div className="homeNav "> {/* Bottom margin added here for individual link */}
+            <NavLink to="/about" className="projectLink  transform transition-all hover:scale-140">
+            <h2 className="font-special  transform transition-all hover:scale-140 ">ABOUT</h2>
 
             </NavLink>
           </div>
-          <div className="aboutNav mb-4"> {/* Bottom margin added here for individual link */}
-            <NavLink to="/about" className="aboutLink transform transition-all hover:scale-140">
-            <h2 className="font-special font-weight: 400 transform transition-all hover:scale-140">PROJECTS</h2>
+          <div className="aboutNav"> {/* Bottom margin added here for individual link */}
+            <NavLink to="/projects" className="aboutLink transform transition-all hover:scale-140">
+            <h2 className="font-special  transform transition-all hover:scale-140">PROJECTS</h2>
             </NavLink>
           </div>
-          <div className="resumeNav mb-4"> {/* Bottom margin added here for individual link */}
-            <NavLink to="/resume" className="resumeLink  transform transition-all hover:scale-140">
-            <h2 className="font-special font-weight: 400 transform transition-all hover:scale-140">RESUME</h2>
+          <div className="resumeNav">
+    <a href="https://docs.google.com/document/d/13KTaaqoQfjT71w9VSf3iAkWxBFkFU01j/edit?usp=sharing&ouid=102500796025269348398&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="resumeLink transform transition-all hover:scale-140">
+        <h2 className="font-special transform transition-all hover:scale-140">RESUME</h2>
+    </a>
+</div>
 
-            </NavLink>
-          </div>
+          
         </div>
       </div>
     </nav>
