@@ -3,7 +3,11 @@ module.exports = {
   purge: ['./src/**/*.{html,js,jsx,tsx}'],
 
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        special: ['Special Elite', 'cursive']
+      }
+    }
   },
   plugins: []
 }
