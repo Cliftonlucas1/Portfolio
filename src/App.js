@@ -3,17 +3,20 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Center from './components/Center'
 import Home from './pages/Home'
+// import './App.css'
 // import NotFound from './components/NotFound'; // if you added a NotFound component
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className="flex-grow flex items-center justify-center w-1459 h-322">
+    <div className="">
+      <Header />
+      <main className="">
         <Routes>
-          <Route path="/" element={<HomeContent />} />
+          <Route path="/" element={<Center />} />
           {/* <Route path="*" element={<NotFound />} /> // catch-all route */}
         </Routes>
       </main>
+      <Footer />
     </div>
   )
 }

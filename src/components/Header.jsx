@@ -1,28 +1,44 @@
 import React from 'react';
-
 import { NavLink } from 'react-router-dom';
 
-const Header = () => (
-  <header className="bg-blue border-b-4 border-gray-400 min-h-screen">
-    <nav className="container mx-auto py-4 flex items-center justify-center ">
-      <div className="flex flex-col items-center logoTitle">
-        <NavLink to="/" className="logo mb-4">
-          <img
-            src="https://media.licdn.com/dms/image/D5635AQFGsSd3_PpiBg/profile-framedphoto-shrink_200_200/0/1680210501089?e=1692216000&v=beta&t=JTv6NLPj06AOfE4Yp9-QL5dnLNafGrXXEhhvltD0iL0"
-            alt="clifton"
-            className="logoImage w-10 h-10 rounded-full border-4 border-gray-600"
-          />
-        </NavLink>
-        <h1 className="trillTrack text-2xl mb-4">Clifton D. Lucas</h1>
-        <div className="homeAbout flex flex-row space-x-8">
-          <div className="homeNav">
-            <NavLink to="/project" className="projectLink text-gray-800">PROJECTS</NavLink>
+const FooterNavigation = () => (
+  <header  className="">
+
+    <nav className="container mx-auto py-4">
+      <div className="text-3xl   mb-4"> {/* Bottom margin added here for the title */}
+
+        <div className="flex items-center justify-center h-full mb-8"> 
+          <NavLink to="/" className="logo">
+            <img
+              // style={{ borderRadius: '50%' }} 
+              className="logoImage w-30 h-30 rounded-full  transform transition-all hover:scale-140"
+              alt="clifton"
+              src="https://media.licdn.com/dms/image/D5635AQFGsSd3_PpiBg/profile-framedphoto-shrink_200_200/0/1680210501089?e=1692216000&v=beta&t=JTv6NLPj06AOfE4Yp9-QL5dnLNafGrXXEhhvltD0iL0"
+            />
+          </NavLink>
+        </div>
+
+        <div className="flex items-center justify-center h-full mb-8 nameTitle"> 
+          <h1>Clifton D. Lucas</h1>
+        </div>
+
+        <div  className="homeAbout flex justify-between mt-4 mb-8"> {/* Top margin added here for the links */}
+          <div className="homeNav mb-4"> {/* Bottom margin added here for individual link */}
+            <NavLink to="/project" className="projectLink  transform transition-all hover:scale-140">
+            <h2 className=" transform transition-all hover:scale-140">About</h2>
+
+            </NavLink>
           </div>
-          <div className="aboutNav">
-            <NavLink to="/about" className="aboutLink text-gray-800">ABOUT</NavLink>
+          <div className="aboutNav mb-4"> {/* Bottom margin added here for individual link */}
+            <NavLink to="/about" className="aboutLink transform transition-all hover:scale-140">
+            <h2 className=" transform transition-all hover:scale-140">Project</h2>
+            </NavLink>
           </div>
-          <div className="resumeNav">
-            <NavLink to="/resume" className="resumeLink text-gray-800">RESUME</NavLink>
+          <div className="resumeNav mb-4"> {/* Bottom margin added here for individual link */}
+            <NavLink to="/resume" className="resumeLink  transform transition-all hover:scale-140">
+            <h2 className=" transform transition-all hover:scale-140">Resume</h2>
+
+            </NavLink>
           </div>
         </div>
       </div>
@@ -30,4 +46,4 @@ const Header = () => (
   </header>
 );
 
-export default Header;
+export default FooterNavigation;
