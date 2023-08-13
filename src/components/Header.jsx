@@ -13,7 +13,7 @@ const FooterNavigation = () => (
   className="logoImage w-30 h-30 rounded-full transform transition-all hover:scale-140"
   style={{ boxShadow: '0 15px 15px rgba(0, 0, 0, 0.6)' }}
   alt="clifton"
-  src="https://media.licdn.com/dms/image/D5635AQFGsSd3_PpiBg/profile-framedphoto-shrink_200_200/0/1680210501089?e=1692216000&v=beta&t=JTv6NLPj06AOfE4Yp9-QL5dnLNafGrXXEhhvltD0iL0"
+  src="https://media.licdn.com/dms/image/D5635AQGLXmaC0_GSUQ/profile-framedphoto-shrink_200_200/0/1691873437265?e=1692507600&v=beta&t=u9TK_eDdAIo0FtqWGpwHot_fe7HS1H4Ne9xug3X3b4A"
 />
 
 </NavLink>

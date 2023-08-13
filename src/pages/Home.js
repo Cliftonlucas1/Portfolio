@@ -4,18 +4,18 @@ import React from 'react'
 import Header from '../components/Header'
 import Center from '../components/Center'
 import Footer from '../components/Footer'
-import About from '../components/About'
+// import About from '../components/About'
 
 // import About from './pages/About'
 
 const Home = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div>
         <Center />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
